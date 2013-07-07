@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+     
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TextView 
+            android:text="Create A Master Password for the whole app"
+            android:textColor="#FF0000"
+            android:width="50dp"/>
+           
+
+        <TableRow>
+            <TextView 
+                android:text="Master Password: "
+                android:width="140dp"/>
+
+            <EditText
+                android:id="@+id/masterpass"
+                android:ems="10"
+                android:width="170dp"
+                android:inputType="textPassword" />
+
+				<requestFocus />
+        </TableRow>
+
+        <TableRow>
+            <TextView 
+                android:text="Confirm Password: "
+                android:width="140dp"/>
+            <EditText
+                android:id="@+id/masterpass1"
+                android:inputType="textPassword" >
+                
+            </EditText>
+        </TableRow>
+        
+        <TableRow>
+            <Button 
+                android:id="@+id/create"
+                android:text="Confirm"
+                android:onClick="onClick"
+                android:textColor="#000000"
+                android:background="@drawable/button_style"/>
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please do not lose or forget this Master Password as it can't be retrieved again"
+            android:textColor="#FF6600" />
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This password locks the whole app. Without this no data will ever be retrieved."
+            android:textColor="#8000FF" />
+
+    </TableLayout>
+</LinearLayout>

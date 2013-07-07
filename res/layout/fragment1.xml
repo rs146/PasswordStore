@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Users"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#610B4B" />
+
+    <Button
+        android:id="@+id/addUserButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:onClick="addUser"
+        android:background="@drawable/red_button" />
+
+    <Button
+        android:id="@+id/changeMyPassButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Change My Password"
+        android:onClick="changePassword"
+        android:background="@drawable/red_button" />
+    <Button
+        android:id="@+id/changeMyPassButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:onClick="logout"
+        android:background="@drawable/red_button" />
+
+</LinearLayout>

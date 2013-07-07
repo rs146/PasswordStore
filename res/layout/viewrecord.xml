@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <TableRow>
+            <TextView 
+                android:text="View Or Edit Entry"
+                android:textColor="#FF0000"
+                android:width="125dp"
+                android:textSize="17dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView 
+                android:text="Title: "
+                android:width="80dp"/>
+
+            <EditText
+                android:id="@+id/viewsitename"
+                android:ems="10"
+                android:width="170dp" />
+
+				<requestFocus />
+        </TableRow>
+
+        <TableRow>
+            <TextView 
+                android:text="URL: "
+                android:width="100dp"/>
+            <EditText
+                android:id="@+id/viewURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="textMultiLine">
+            </EditText>
+        </TableRow>
+        
+        <TableRow>
+            <TextView 
+                android:text="Username: "
+                android:width="100dp"/>
+            <EditText
+                android:id="@+id/viewusername" >
+            </EditText>
+        </TableRow>
+        
+        <TableRow>
+            <TextView 
+                android:text="Password: "
+                android:width="80dp"/>
+            <EditText
+                android:id="@+id/viewsitePass">
+            </EditText>
+        </TableRow>
+        
+        <TableRow>
+            <TextView 
+                android:text="My Comments: "
+                android:width="100dp"/>
+
+            <EditText
+                android:id="@+id/viewmyComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="textMultiLine" />
+        </TableRow>
+
+        <TableRow>
+            
+            <Button
+                android:id="@+id/showhide"
+                android:background="@drawable/button"
+                android:text="Show/Hide Password"
+                android:textSize="13dp"
+                android:textColor="#610B38"
+                android:onClick="showhide">
+            </Button>
+            <Button
+                android:id="@+id/save"
+                android:background="@drawable/button"
+                android:text="Save Changes"
+                android:textSize="16dp"
+                android:textColor="#0404B4"
+                android:onClick="save">
+            </Button>
+            
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Passwords are both encrypted and encoded"
+            android:textColor="#FF6600" />
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TextView 
+        	android:text="Please enter the Master Password to unlock this app"
+        	android:textColor="#FF0000"/>
+
+        <TableRow>
+            <TextView 
+                android:text="Password: "
+                android:width="120dp"/>
+            <EditText
+                android:id="@+id/key"
+                android:inputType="textPassword"
+                android:width="160dp" >
+                
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+            <Button 
+                android:id="@+id/unlock"
+                android:text="Unlock"
+                android:onClick="onClick"
+                android:background="@drawable/button_style"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

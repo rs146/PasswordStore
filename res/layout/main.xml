@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <TableRow>
+            <TextView 
+                android:text="Create User Account"
+                android:textColor="#FF0000"
+                android:width="6dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView 
+                android:text="User Name: "
+                android:width="100dp"/>
+
+            <EditText
+                android:id="@+id/uname"
+                android:ems="10"
+                android:width="140dp" />
+
+				<requestFocus />
+        </TableRow>
+
+        <TableRow>
+            <TextView 
+                android:text="Password: "
+                android:width="100dp"/>
+            <EditText
+                android:id="@+id/pass"
+                android:inputType="textPassword" >
+                
+            </EditText>
+        </TableRow>
+        
+        <TableRow>
+            <TextView 
+                android:text="Confirm Password: "
+                android:width="100dp"/>
+            <EditText
+                android:id="@+id/pass1"
+                android:inputType="textPassword" >
+            </EditText>
+        </TableRow>
+        
+
+        <TableRow>
+            <Button 
+                android:id="@+id/create"
+                android:text="Create My Account"
+                android:onClick="onClick"/>
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Password will be encrypted"
+            android:textColor="#FF6600" />
+
+    </TableLayout>
+</LinearLayout>
