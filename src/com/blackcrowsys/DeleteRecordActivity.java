@@ -107,14 +107,19 @@ public class DeleteRecordActivity extends Activity {
 		String key = getMaster();
 		DBAdapter dbAdapter = new DBAdapter(this);
 		SQLiteDatabase dbRead = dbAdapter.getReadableDatabase(key);
-		
+
 		boolean success = dbAdapter.deleteSite(getId(), dbRead);
-		
-		if (success){
-			Toast.makeText(getBaseContext(), "The selected entry has been deleted", Toast.LENGTH_SHORT).show();
+
+		if (success) {
+			Toast.makeText(getBaseContext(),
+					"The selected entry has been deleted", Toast.LENGTH_SHORT)
+					.show();
 			finish();
 		} else {
-			Toast.makeText(getBaseContext(), "Unfortunately the selected entry has not been deleted. Please try again.", Toast.LENGTH_LONG).show();
+			Toast.makeText(
+					getBaseContext(),
+					"Unfortunately the selected entry has not been deleted. Please try again.",
+					Toast.LENGTH_LONG).show();
 		}
 		dbRead.close();
 	}
@@ -181,8 +186,8 @@ public class DeleteRecordActivity extends Activity {
 		}
 		return decodedWord;
 	}
-	
-	public void onDestroy(){
+
+	public void onDestroy() {
 		super.onDestroy();
 	}
 
